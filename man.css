@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    font-family: Inter;
+    background-image: url(images/office_bg_emp.png);
+    background-color: black;
+}
+
+.submit-button {
+    margin-top: 20px;
+    background-color: #414141;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: black;
+}
+
+
+.welcome-box {
+    font-family: Inter;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    opacity: 75%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-style: outset;
+    border-radius: 5px;
+}
+
+.manage {
+  background-color: #eee;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  opacity: 90%;
+}
+
+.employees {
+  background-color: #eee;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  opacity: 90%;
+}
+
+.sidebar {
+    cursor: pointer;
+}
+
+.box {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 80%;
+}
+
+.sidebar {
+    cursor: pointer;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #ffffff;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }

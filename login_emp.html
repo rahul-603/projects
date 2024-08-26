@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Member Login Page</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <style>
+        body {
+            font-family: Alegreya;
+            background-color: black;
+            background-image: url(images/office_bg_emp.png);
+        }
+
+        .login-box {
+            background-color: #eee; 
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 200px;
+            opacity: 100%;
+        }
+
+        .input-field {
+            margin-bottom: 10px;
+        }
+
+        .input-field input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .input-field label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .submit-button {
+            background-color: #414141;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <form id="login-form">
+            <div class="input-field">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="input-field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if (username === 'rahulk' && password === 'rahulk') {
+                window.location.href = 'http://127.0.0.1:5500/welcome_emp.html';
+            } 
+            else if(username === null || password === null || (username && password === null)) {
+                alert('Field can\'t be empty');
+            }
+            else{
+                alert('Invalid username or Password');
+            }
+            
+        });
+    </script>
+</body>
+</html>

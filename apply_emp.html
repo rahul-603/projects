@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="emp.css">
+</head>
+<body>
+    <div class="welcome-box">
+        <h1>Welcome <span id="username">User</span>!</h1>
+        <img id="click" src="images/sidebar_emp.svg" onclick="openNav()">
+    </div>
+
+    <div class="leave-box">
+        <h1>Leave Apply</h1>
+        <form id="leave-form">
+            <label for="leave-type">Select type of leave:</label>
+            <select id="leave-type" name="leave-type">
+                <option value="nil">---Select any---</option>
+                <option value="casual">Casual Leave</option>
+                <option value="vacation">Vacation Leave</option>
+                <option value="lop">LOP</option>
+                <option value="sick">Sick Leave</option>
+                <option value="od">OD/Permission</option>
+                <option value="winsum">Winter/Summer Leave</option>
+                <option value="spres">Special Present</option>
+                <option value="wfh">WFH</option>
+            </select>
+            <div id="date-fields">
+                <label for="from-date">From:</label>
+                <input type="date" id="from-date" name="from-date">
+                <label for="to-date">To:</label>
+                <input type="date" id="to-date" name="to-date">
+            </div>
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="http://127.0.0.1:5500/welcome_emp.html">Home</a><br>
+        <a href="http://127.0.0.1:5500/apply_emp.html">Apply Leave</a><br>
+        <a href="http://127.0.0.1:5500/history_emp.html#">History of Leave</a><br>
+        <a href="http://127.0.0.1:5500/about_emp.html">About</a><br>
+        <a href="http://127.0.0.1:5500/login_emp.html">Logout</a><br>
+    </div>
+
+    <script src="js_emp.js"></script>
+</body>
+</html>

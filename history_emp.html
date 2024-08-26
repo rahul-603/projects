@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="emp.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="welcome-box">
+        <h1>Welcome <span id="username">User</span>!</h1>
+        <img id="click" src="images/sidebar_emp.svg" onclick="openNav()">
+        
+    </div>
+
+    <div class="history-box">
+        <h1>History of Leave</h1>
+        <ul>
+            <li>S.No.</li>
+            <li>From (Date & Time)</li>
+            <li>To (Date & Time)</li>
+            <li>Reason</li>
+            <li>Status</li>
+        </ul>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="http://127.0.0.1:5500/welcome_emp.html">Home</a><br>
+        <a href="http://127.0.0.1:5500/apply_emp.html">Apply Leave</a><br>
+        <a href="http://127.0.0.1:5500/history_emp.html#">History of Leave</a><br>
+        <a href="http://127.0.0.1:5500/about_emp.html">About</a><br>
+        <a href="http://127.0.0.1:5500/login_emp.html">Logout</a><br>
+    </div>
+    
+    <script src="js_emp.js"></script>
+    
+</body>
+</html>
